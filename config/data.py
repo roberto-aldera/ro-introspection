@@ -7,7 +7,7 @@ TESTING_DATA_IDX = 0
 # platform
 PLATFORM = "Muttley"
 PLATFORM_CONFIG_PATH = os.path.expanduser(
-    "~/code/mrgcorelibs/src/platform-configurations/"
+    "~/code/corelibs/src/platform-configurations/"
     "robotcar/2018-04-25-10-00-00/final_platform_config.xml")
 
 # data store
