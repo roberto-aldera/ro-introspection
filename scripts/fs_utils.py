@@ -126,7 +126,7 @@ def get_file(comparison, job_id):
             return settings.MOOS_TARGET_MOTION_ESTIMATIONS_LM_PATH
         elif job_id == "gpu":
             return settings.GPU_TARGET_MOTION_ESTIMATIONS_LM_PATH
-        elif job_id == "stereo":
+        elif job_id == "VO":
             return settings.TEST_RELATIVE_POSES_PATH
     elif comparison == "timing":
         if job_id == D1:

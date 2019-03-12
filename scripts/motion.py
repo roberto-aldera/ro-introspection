@@ -36,7 +36,7 @@ def read_motion_estimates(relative_poses_path):
 def get_poses(se3s, job_id):
     poses = []
     pose = np.identity(
-        4) * SE3_ALIGNMENT if job_id != "stereo" else np.identity(4)
+        4) * SE3_ALIGNMENT if job_id != "VO" else np.identity(4)
     for i in range(len(se3s)):
         pose = pose * se3s[i]
         poses.append(pose)

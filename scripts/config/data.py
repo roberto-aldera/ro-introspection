@@ -15,7 +15,7 @@ PLATFORM_CONFIG_PATH = os.path.expanduser(
     "robotcar/2018-04-25-10-00-00/final_platform_config.xml")
 
 # data store
-DSTORE = "mrgdatastore5"
+DSTORE = "mrgdatastore6"
 
 # scratch
 BASE_DIR = "rugged_ro"
@@ -35,25 +35,11 @@ TRAINING_DATA = [
 
 # testing data
 TESTING_DATA = [
-    {  # cloudy
-        "foray": "2017-08-21-10-48-51-oxford-10k-with-radar-2",
-        "radar_log_datestamp": "2017-08-21-09-48-53",
-        "odom_log_datestamp": "2017-08-21-09-48-52",
+    {  # rural RO
+        "foray": "2018-06-21-16-24-39-long-hanborough-to-ori-V4-radar-leopon-trial-sunny-long-range",
+        "radar_log_datestamp": "2018-06-21-15-24-44",
+        "odom_log_datestamp": "2018-06-21-15-24-40",
         "start_frame_ind": 50,
         "num_frames": 7200
-    },
-    {  # rain
-        "foray": "2017-09-08-11-32-38-oxford-10k-with-radar-rain",
-        "radar_log_datestamp": "2017-09-08-10-32-41",
-        "odom_log_datestamp": "2017-09-08-10-32-39",
-        "start_frame_ind": 50,
-        "num_frames": 7900
-    },
-    {  # night
-        "foray": "2017-08-22-22-53-02-oxford-10k-with-radar-night-4",
-        "radar_log_datestamp": "2017-08-22-21-53-04",
-        "odom_log_datestamp": "2017-08-22-21-53-03",
-        "start_frame_ind": 25,
-        "num_frames": 5400
     }
 ]

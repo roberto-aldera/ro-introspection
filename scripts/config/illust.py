@@ -7,7 +7,7 @@ FONT_SIZE = 8
 LINE_WIDTH = 1
 
 # colors
-COLOR_MAP = {"stereo": "black",
+COLOR_MAP = {"VO": "black",
              D1: "red",
              D2: "blue",
              "gt": "green"}
@@ -15,7 +15,7 @@ COLOR_MAP = {"stereo": "black",
 # comparison type
 JOB_IDS = [D1,D2]
 BASE_FIGS = True
-BASE_JOB_ID = "stereo"
+BASE_JOB_ID = "VO"
 
 # axes
 JOB_LEGENDS = True
