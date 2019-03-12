@@ -5,7 +5,7 @@ import dsp
 import numpy as np
 import matplotlib as mpl
 
-mpl.use('Agg')
+mpl.use('TkAgg')
 mpl.rcParams['font.size'] = settings.FONT_SIZE
 mpl.rcParams['ytick.labelsize'] = 'large'
 mpl.rcParams['xtick.labelsize'] = 'large'
@@ -169,6 +169,7 @@ def plot(comparison,
     # save
     print("saving fig_file: " + fig_file)
     plt.savefig(fig_file, bbox_inches='tight')
+    plt.show()
     plt.close()
 
     print("figs is finished!")
