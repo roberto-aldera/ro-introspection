@@ -1,4 +1,5 @@
 import settings
+from config.data import *
 
 import os
 import shutil
@@ -115,9 +116,9 @@ def get_timestamps(directory):
 
 def get_file(comparison, job_id):
     if comparison in ["speed", "pose", "yaw_rate"]:
-        if job_id == "ro":
+        if job_id == D1:
             return settings.RO_TARGET_MOTION_ESTIMATIONS_LM_PATH
-        elif job_id == "unet":
+        elif job_id == D2:
             return settings.UNET_TARGET_MOTION_ESTIMATIONS_LM_PATH
         elif job_id == "gt":
             return settings.GT_TARGET_MOTION_ESTIMATIONS_LM_PATH
@@ -128,9 +129,9 @@ def get_file(comparison, job_id):
         elif job_id == "stereo":
             return settings.TEST_RELATIVE_POSES_PATH
     elif comparison == "timing":
-        if job_id == "ro":
+        if job_id == D1:
             return settings.RO_MOTION_ESTIMATE_TIMING_FILE
-        elif job_id == "unet":
+        elif job_id == D2:
             return settings.UNET_MOTION_ESTIMATE_TIMING_FILE
         elif job_id == "gt":
             return settings.GT_MOTION_ESTIMATE_TIMING_FILE
@@ -139,9 +140,9 @@ def get_file(comparison, job_id):
         elif job_id == "gpu":
             return settings.GPU_MOTION_ESTIMATE_TIMING_FILE
     elif comparison == "landmarks_detected":
-        if job_id == "ro":
+        if job_id == D1:
             return settings.RO_LANDMARK_POINTCLOUDS_MONOLITHIC
-        elif job_id == "unet":
+        elif job_id == D2:
             return settings.UNET_LANDMARK_POINTCLOUDS_MONOLITHIC
         elif job_id == "gt":
             return settings.GT_LANDMARK_POINTCLOUDS_MONOLITHIC
@@ -150,9 +151,9 @@ def get_file(comparison, job_id):
         elif job_id == "gpu":
             return settings.GPU_LANDMARK_POINTCLOUDS_MONOLITHIC
     elif comparison == "matches_discovered":
-        if job_id == "ro":
+        if job_id == D1:
             return settings.RO_MATCHES_DISCOVERED_FILE
-        elif job_id == "unet":
+        elif job_id == D2:
             return settings.UNET_MATCHES_DISCOVERED_FILE
         elif job_id == "gt":
             return settings.GT_MATCHES_DISCOVERED_FILE

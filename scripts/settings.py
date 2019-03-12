@@ -194,7 +194,7 @@ MOOS_MATCHES_DISCOVERED_FILE = os.path.join(
     MOOS_OUTPUT_DIR, "matches_discovered.csv")
 
 # RO estimates
-RO_OUTPUT_DIR = os.path.join(TEST_RADAR_UTILS_OUTPUT_DIR, "ro")
+RO_OUTPUT_DIR = os.path.join(TEST_RADAR_UTILS_OUTPUT_DIR, D1)
 RO_TARGET_AZI_MSGS_MONOLITHIC_PATH = os.path.join(
     RO_OUTPUT_DIR, "navtech_scans_as_azi_msgs.monolithic")
 RO_TARGET_LANDMARKS_PATH = os.path.join(
@@ -212,7 +212,7 @@ RO_MATCHES_DISCOVERED_FILE = os.path.join(
     RO_OUTPUT_DIR, "matches_discovered.csv")
 
 # unet estimates
-UNET_OUTPUT_DIR = os.path.join(TEST_RADAR_UTILS_OUTPUT_DIR, "unet")
+UNET_OUTPUT_DIR = os.path.join(TEST_RADAR_UTILS_OUTPUT_DIR, D2)
 UNET_TARGET_AZI_MSGS_MONOLITHIC_PATH = os.path.join(
     UNET_OUTPUT_DIR, "navtech_scans_as_azi_msgs.monolithic")
 UNET_TARGET_LANDMARKS_PATH = os.path.join(

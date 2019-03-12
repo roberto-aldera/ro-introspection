@@ -1,3 +1,5 @@
+from data import *
+
 # plot params
 GRID_LINE_WIDTH = 0.5
 FONT_FAMILY = "serif"
@@ -6,12 +8,12 @@ LINE_WIDTH = 1
 
 # colors
 COLOR_MAP = {"stereo": "black",
-             "ro": "red",
-             "unet": "blue",
+             D1: "red",
+             D2: "blue",
              "gt": "green"}
 
 # comparison type
-JOB_IDS = ["ro","unet"]
+JOB_IDS = [D1,D2]
 BASE_FIGS = True
 BASE_JOB_ID = "stereo"
 

@@ -1,5 +1,9 @@
 import os
 
+# data to run
+D1 = "standard-ro"
+D2 = "enhanced-ro"
+
 # which data to use
 TRAINING_DATA_IDX = 0
 TESTING_DATA_IDX = 0
@@ -14,8 +18,8 @@ PLATFORM_CONFIG_PATH = os.path.expanduser(
 DSTORE = "mrgdatastore5"
 
 # scratch
-BASE_DIR = "vizard"
-BASE_OUTPUT = "oxford-10k"
+BASE_DIR = "rugged_ro"
+BASE_OUTPUT = "dataset-name"
 
 # training data
 TRAINING_DATA = [
