@@ -3,7 +3,7 @@ from data import *
 # plot params
 GRID_LINE_WIDTH = 0.5
 FONT_FAMILY = "serif"
-FONT_SIZE = 25
+FONT_SIZE = 8
 LINE_WIDTH = 1
 
 # colors

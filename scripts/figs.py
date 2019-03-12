@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib as mpl
 
 mpl.use('Agg')
-mpl.rcParams['font.size'] = 15
+mpl.rcParams['font.size'] = settings.FONT_SIZE
 mpl.rcParams['ytick.labelsize'] = 'large'
 mpl.rcParams['xtick.labelsize'] = 'large'
 
