@@ -156,14 +156,14 @@ GPU_MATCHES_DISCOVERED_FILE = os.path.join(
     GPU_OUTPUT_DIR, "matches_discovered.csv")
 
 # gt estimates
-GT_OUTPUT_DIR = os.path.join(TEST_RADAR_UTILS_OUTPUT_DIR, "gt")
+GT_OUTPUT_DIR = os.path.join(TEST_RADAR_UTILS_OUTPUT_DIR, GT)
 GT_TARGET_AZI_MSGS_MONOLITHIC_PATH = os.path.join(
     GT_OUTPUT_DIR, "navtech_scans_as_azi_msgs.monolithic")
 GT_TARGET_LANDMARKS_PATH = os.path.join(
     GT_OUTPUT_DIR,
     "extracted_landmark_sets.monolithic")
 GT_TARGET_MOTION_ESTIMATIONS_LM_PATH = os.path.join(
-    GT_OUTPUT_DIR, "radar_motion_estimation.monolithic")
+    GT_OUTPUT_DIR, "flattened_novatel_generated_poses.monolithic")
 GT_LANDMARK_IMAGES_MONOLITHIC = os.path.join(
     GT_OUTPUT_DIR, "landmark_images.monolithic")
 GT_MOTION_ESTIMATE_TIMING_FILE = os.path.join(

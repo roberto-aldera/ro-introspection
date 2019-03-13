@@ -3,6 +3,7 @@ import os
 # data to run
 D1 = "standard-ro"
 D2 = "enhanced-ro"
+GT = "ground-truth"
 
 # which data to use
 TRAINING_DATA_IDX = 0

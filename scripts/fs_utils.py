@@ -120,7 +120,7 @@ def get_file(comparison, job_id):
             return settings.RO_TARGET_MOTION_ESTIMATIONS_LM_PATH
         elif job_id == D2:
             return settings.UNET_TARGET_MOTION_ESTIMATIONS_LM_PATH
-        elif job_id == "gt":
+        elif job_id == GT:
             return settings.GT_TARGET_MOTION_ESTIMATIONS_LM_PATH
         elif job_id == "moos":
             return settings.MOOS_TARGET_MOTION_ESTIMATIONS_LM_PATH
@@ -133,7 +133,7 @@ def get_file(comparison, job_id):
             return settings.RO_MOTION_ESTIMATE_TIMING_FILE
         elif job_id == D2:
             return settings.UNET_MOTION_ESTIMATE_TIMING_FILE
-        elif job_id == "gt":
+        elif job_id == GT:
             return settings.GT_MOTION_ESTIMATE_TIMING_FILE
         elif job_id == "moos":
             return settings.MOOS_MOTION_ESTIMATE_TIMING_FILE
@@ -144,7 +144,7 @@ def get_file(comparison, job_id):
             return settings.RO_LANDMARK_POINTCLOUDS_MONOLITHIC
         elif job_id == D2:
             return settings.UNET_LANDMARK_POINTCLOUDS_MONOLITHIC
-        elif job_id == "gt":
+        elif job_id == GT:
             return settings.GT_LANDMARK_POINTCLOUDS_MONOLITHIC
         elif job_id == "moos":
             return settings.MOOS_LANDMARK_POINTCLOUDS_MONOLITHIC
@@ -155,7 +155,7 @@ def get_file(comparison, job_id):
             return settings.RO_MATCHES_DISCOVERED_FILE
         elif job_id == D2:
             return settings.UNET_MATCHES_DISCOVERED_FILE
-        elif job_id == "gt":
+        elif job_id == GT:
             return settings.GT_MATCHES_DISCOVERED_FILE
         elif job_id == "moos":
             return settings.MOOS_MATCHES_DISCOVERED_FILE

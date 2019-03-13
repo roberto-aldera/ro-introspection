@@ -10,10 +10,10 @@ LINE_WIDTH = 1
 COLOR_MAP = {"VO": "black",
              D1: "red",
              D2: "blue",
-             "gt": "green"}
+             GT: "green"}
 
 # comparison type
-JOB_IDS = [D1,D2]
+JOB_IDS = [D1,D2,GT]
 BASE_FIGS = True
 BASE_JOB_ID = "VO"
 
