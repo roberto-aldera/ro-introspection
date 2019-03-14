@@ -4,6 +4,7 @@ import os
 D1 = "standard-ro"
 D2 = "enhanced-ro"
 GT = "ground-truth"
+VO = "VO"
 
 # which data to use
 TRAINING_DATA_IDX = 0

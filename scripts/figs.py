@@ -130,6 +130,8 @@ def plot(comparison,
                     T_base) if t >= min_T and t <= max_T]
 
             # plot base signal
+            print("adding base signal to plot...")
+            # print(Y_data_base[1500:2000])
             plt = add_to_plot(
                 plt,
                 settings.BASE_JOB_ID,

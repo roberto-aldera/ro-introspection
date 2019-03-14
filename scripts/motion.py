@@ -8,6 +8,7 @@ from mrg.adaptors.transform import PbSerialisedTransformToPython
 from mrg.transform.conversions import se3_to_components, build_se3_transform
 
 import numpy as np
+from config.data import *
 
 SE3_ALIGNMENT = build_se3_transform(
     [0, 0, 0, 0, 0, -settings.STATIC_YAW_OFFSET * np.pi / 180.])
@@ -36,7 +37,8 @@ def read_motion_estimates(relative_poses_path):
 def get_poses(se3s, job_id):
     poses = []
     pose = np.identity(
-        4) * SE3_ALIGNMENT if job_id != "VO" else np.identity(4)
+        4) * SE3_ALIGNMENT if (job_id != VO or job_id != GT) else np.identity(4)
+    # pose = np.identity(4)
     for i in range(len(se3s)):
         pose = pose * se3s[i]
         poses.append(pose)
