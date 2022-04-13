@@ -1,4 +1,4 @@
 *.pyc
 venv*
 .idea*
-jupyter*
+jupyter-scripts/.ipynb_checkpoints*
