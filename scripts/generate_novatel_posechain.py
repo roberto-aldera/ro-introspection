@@ -14,5 +14,5 @@ make_pose_chain_cmd = make_pose_chain_app + \
                       " --file_output_path " + NOVATEL_POSE_OUTPUT_PATH
 
 # run process
-print('Generating pose chain from',RAW_NOVATEL_PATH,"to",NOVATEL_POSE_OUTPUT_PATH)
+print('Generating pose chain from', RAW_NOVATEL_PATH, 'to', NOVATEL_POSE_OUTPUT_PATH)
 subprocess.Popen(make_pose_chain_cmd, shell=True).wait()

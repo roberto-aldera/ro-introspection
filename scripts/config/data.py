@@ -2,15 +2,24 @@ import os
 
 # New paths
 INS_LOGS_PATH = os.path.expanduser("~/data/odometry-comparisons/novatel-outputs")
-RAW_NOVATEL_PATH = os.path.expanduser("~/data/odometry-comparisons/"
+RAW_NOVATEL_PATH_TEST = os.path.expanduser("~/data/odometry-comparisons/"
                                       "2018-06-21-16-24-39-long-hanborough-to-ori-V4-radar-leopon-trial-sunny-long-range/"
                                       "novatel-fixed-timestamps/NovAtel_INSPositionVelocityAttitude.monolithic")
+RAW_NOVATEL_PATH_TRAIN = os.path.expanduser(
+    "/Users/roberto/data/odometry-comparisons/novatel-outputs/NovAtel_INSPositionVelocityAttitude.monolithic")
+# RAW_NOVATEL_PACKET_PATH = os.path.expanduser("/Volumes/mrgdatastore6/Logs/Muttley/"
+#                                              "2018-06-21-15-58-58-rural-loop-v4-radar-leopon-trial-sunny-long-range/"
+#                                              "logs/INS/NovAtel/2018-06-21-14-59-00/NovAtel_RawPacketData.monolithic")
+RAW_NOVATEL_PACKET_PATH = os.path.expanduser("/Volumes/mrgdatastore6/Logs/Muttley/2018-07-27-15-35-23-long-hanbourgh-to-ori/"
+                                             "logs/INS/NovAtel/2018-07-27-14-35-24/NovAtel_RawPacketData.monolithic")
+RAW_NOVATEL_PATH = RAW_NOVATEL_PATH_TRAIN
 NOVATEL_POSE_OUTPUT_PATH = os.path.join(INS_LOGS_PATH, "novatel_generated_poses.monolithic")
 FLAT_POSE_OUTPUT_PATH = os.path.join(INS_LOGS_PATH, "flattened_novatel_generated_poses.monolithic")
 
 # Motion estimation parameters
-RADAR_RAW_SCAN_MONO = "/Volumes/mrgdatastore6/Logs/Muttley/2019-01-10-12-32-52-radar-oxford-10k/" \
-                      "logs/radar/cts350x_103517/2019-01-10-12-32-57/cts350x_raw_scan.monolithic"
+RADAR_RAW_SCAN_MONO = "/Users/roberto/data/RadarDataLogs/" \
+                      "2018-06-21-15-58-58-rural-loop-v4-radar-leopon-trial-sunny-long-range/logs/radar/cts350x/" \
+                      "2018-06-21-14-59-03/cts350x_raw_scan.monolithic"
 DO_VISUALISER = True
 RO_OUTPUT_MONO_FOLDER = os.path.expanduser("~/data/odometry-comparisons/ro-outputs")
 RO_ODOMETRY_FILENAME = "radar_odometry.monolithic"
