@@ -1,43 +1,15 @@
-Radar plotting scripts
+Introspective radar odometry scripts
 ==============================================================================
 
 ## Description
 
-Provide tools to process and analyze radar data from Navtech for pose estimation, localisation, and more.
+These scripts were used in the development of an introspective component that augmented MRG Radar Odometry, as published in [1].
+Generating labelled data for categorising odometry estimates was done with some of the code here, along with the development of an SVM classifier used to predict poor odometry based on the eigenvector elements from the matching component (see publication for details).
 
-## Installation
-TODO.
+Requires some MRG dependencies not contained in this repo, so is in an archive state.
 
-## Dependencies
+## ITSC 2019 publication
+📽️ A video from the final ITSC 2019 publication can be found [here](https://youtu.be/sa-eBFwL2mE).
 
-- corelibs
+[1] R. Aldera, D. De Martini, M. Gadd, and P. Newman, “What could go wrong? Introspective radar odometry in challenging environments,” in 2019 IEEE Intelligent Transportation Systems Conference (ITSC), 2019, pp. 2835–2842.
 
-## Usage
-TODO.
-
-## Contributing
-
-1. Create your feature branch
-2. Commit your changes
-3. Push to the branch
-4. Submit a pull request to one of the project owners below through stash
-
-## Project Owners
-
-- Roberto Aldera <roberto@robots.ox.ac.uk>
-
-## References
-
-Precise Ego-Motion Estimation with Millimeter-Wave Radar under Diverse and Challenging Conditions - ICRA 2018
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8460687
-
-## Copyright
-
-Copyright (c) 2003-2019 University of Oxford. All rights reserved.
-Authors: Oxford Robotics Institute, University of Oxford
-         http://ori.robots.ox.ac.uk
-
-This file is the property of the University of Oxford.
-Redistribution and use in source and binary forms, with or without
-modification, is not permitted without an explicit licensing agreement
-(research or commercial). No warranty, explicit or implicit, provided.
