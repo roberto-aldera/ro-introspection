@@ -2,6 +2,7 @@ Introspective radar odometry scripts
 ==============================================================================
 
 ## Description
+⚠️ Messy research code 👨‍🎓
 
 These scripts were used in the development of an introspective component that augmented MRG Radar Odometry, as published in [1].
 Generating labelled data for categorising odometry estimates was done with some of the code here, along with the development of an SVM classifier used to predict poor odometry based on the eigenvector elements from the matching component (see publication for details).
